@@ -76,7 +76,7 @@ button:focus {
   padding-top: 200px; }
   @media (max-width: 1199px) {
     .section_gap_top {
-      padding-top: 80px; } }
+      padding-top: 100px; } }
 
 .section_gap_bottom {
   padding-bottom: 200px; }
@@ -1130,8 +1130,19 @@ padding-top: 50px;;
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 /*============== contact_area css ================*/
-.mapBox {
-  height: 320px; }
+.map-responsive{
+  overflow:hidden;
+  padding-bottom:50%;
+  position:relative;
+  height:0;
+}
+.map-responsive iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
 
 .contact_info .info_item {
   position: relative;
