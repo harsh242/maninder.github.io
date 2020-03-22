@@ -8,6 +8,9 @@
 /* Wide Mobile Layout: 480px */
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
+html{
+  scroll-behavior: smooth;
+}
 body {
   line-height: 26px;
   font-size: 15px;
@@ -63,6 +66,70 @@ button:focus {
 
 .mt-50 {
   margin-top: 50px; }
+
+/* scroll down */
+.scrolldown {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-transform-origin: right top 0;
+  -ms-transform-origin: right top 0;
+  transform-origin: right top 0;
+  float: right;
+}
+.scrolldown i {
+  padding-left: 9px;
+}
+.scrolldown a:hover, .scrolldown a:focus, .scrolldown a:active {
+  color: #151515 !important;
+}
+
+html[data-useragent*='MSIE 10.0'] .scrolldown,
+.oldie .scrolldown {
+  display: none;
+}
+
+.scroll-icon {
+  display: inline-block;
+  font-family: "montserrat-bold", sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+  color: #000 !important;
+  background: transparent;
+  position: relative;
+  top: 36px;
+  right: 42px;
+  -webkit-animation: animate-it 2s ease infinite;
+  animation: animate-it 2s ease infinite;
+}
+
+/* vertical animation */
+@-webkit-keyframes animate-it {
+  0%, 60%, 80%, 100% {
+    -webkit-transform: translateX(0);
+  }
+  20% {
+    -webkit-transform: translateX(-5px);
+  }
+  40% {
+    -webkit-transform: translateX(20px);
+  }
+}
+@keyframes animate-it {
+  0%, 60%, 80%, 100% {
+    -webkit-transform: translateX(0);
+  }
+  20% {
+    -webkit-transform: translateX(-5px);
+  }
+  40% {
+    -webkit-transform: translateX(20px);
+  }
+}
 
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
@@ -349,11 +416,12 @@ padding-top: 50px;;
       @media (max-width: 991px) {
         .home_banner_area .banner_inner .banner_content {
           margin-top: 150px; } }
-      .home_banner_area .banner_inner .banner_content h3 {
+      .home_banner_area .banner_inner .banner_content p {
         font-size: 40px;
         margin-bottom: 20px;
-        position: relative; }
-        .home_banner_area .banner_inner .banner_content h3:after {
+        position: relative;
+      color: #000; }
+        .home_banner_area .banner_inner .banner_content p:after {
           content: '';
           width: 410px;
           height: 2px;
@@ -362,11 +430,11 @@ padding-top: 50px;;
           left: 23%;
           background: #000000; }
           @media (max-width: 575px) {
-            .home_banner_area .banner_inner .banner_content h3:after {
+            .home_banner_area .banner_inner .banner_content p:after {
               display: none; } }
       .home_banner_area .banner_inner .banner_content h1 {
         margin-top: 20px;
-        font-size: 70px;
+        font-size: 60px;
         line-height: 60px;
         margin-bottom: 25px; }
         @media (max-width: 1024px) {
@@ -2469,7 +2537,6 @@ h6 {
   padding: 45px 25px;
   text-align: center;
   background: #f9f9fd;
-  cursor: pointer;
   margin-bottom: 30px;
   -webkit-transition: all 0.4s ease 0s;
   -moz-transition: all 0.4s ease 0s;
@@ -2483,9 +2550,7 @@ h6 {
     text-transform: uppercase; }
   .feature_item p {
     margin-bottom: 0px; }
-  .feature_item:hover {
-    box-shadow: 0px 15px 30px rgba(77, 87, 222, 0.3);
-    background: #fff; }
+ 
 
 /* End Features Area css
 ============================================================================================ */
