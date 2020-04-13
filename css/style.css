@@ -243,6 +243,12 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
     .section_gap_bottom {
       padding-bottom: 80px; } }
 
+.head_name{
+  color:#854fee; 
+  font-size: 1.5rem;
+  font-family: "Rubik", sans-serif;
+}
+
 /* Main Title Area css
 ============================================================================================ */
 .main_title {
