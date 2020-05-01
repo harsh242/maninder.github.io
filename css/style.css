@@ -244,7 +244,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
       padding-bottom: 80px; } }
 
 .head_name{
-  color:#854fee; 
+  color:#4458dc; 
   font-size: 1.5rem;
   font-family: "Rubik", sans-serif;
 }
@@ -914,7 +914,7 @@ padding-top: 50px;;
       padding-bottom: 50px; } }
 
 .feature_item {
-  padding: 45px 25px;
+  padding: 45px 30px;
   text-align: center;
   background: #f9f9fd;
   margin-bottom: 30px;
@@ -1107,7 +1107,7 @@ padding-top: 50px;;
     margin-bottom: 23px; }
 
   .header_area .navbar {
-    background: #000; }
+    background: black; }
 
   .navbar-toggler[aria-expanded="false"] span:nth-child(2) {
     opacity: 1; }
